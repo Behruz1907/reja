@@ -1,1 +1,347 @@
-<div>HELLO WORLD YOU ARE IN AUTHORS!</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/all.min.css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <div class="frame">
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+            <div class="left_1-1">
+              <img
+                src="images/Profile.1.png"
+                width="156px"
+                height="142px"
+                alt=""
+              />
+            </div>
+            <div class="left_1-2"><%=user.name%></div>
+            <div class="left_1-3"><%=user.profession%></div>
+            <div class="left_icons">
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/facebook.svg" class="icon-1" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/instagram.svg" class="icon-1" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/twitter.svg" class="icon-1" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/linkedin.svg" class="icon-1" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/youtube.svg" class="icon-1" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/dribbble.svg" class="icon-1" />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_2">
+            <div class="left_2_1">
+              <div class="inform">Age:</div>
+              <div class="right_side_txt"><%=user.age%></div>
+            </div>
+            <div class="left_2_1">
+              <div class="inform">Residence:</div>
+              <div class="right_side_txt"><%=user.residence%></div>
+            </div>
+            <div class="left_2_1">
+              <div class="inform">Freelance:</div>
+              <div style="color: rgb(60, 156, 60)">Available</div>
+            </div>
+            <div class="left_2_1">
+              <div class="inform">Address:</div>
+              <div class="right_side_txt"><%=user.address%></div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <!-- <div class="left_3">
+
+            <div class="left_lang">
+              <div class="lang_box">
+                <p class="lang_title">Languages</p>
+                <div class="lang_row">
+                  <p class="lang"><%=user.languages[0]%></p>
+                  <p class="lang_perc">100%</p>
+                </div>
+                <div class="lang_row">
+                  <p class="lang"><%=user.languages[1]%></p>
+                  <p class="lang_perc">70%</p>
+                </div>
+                <div class="lang_row">
+                  <p class="lang"><%=user.languages[2]%></p>
+                  <p class="lang_perc">80%</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="left_3">
+            <div style="margin-bottom: 15px; font-weight: bolder">
+              Languages
+            </div>
+            <div class="left_3_lan">
+              <div><%=user.languages[0]%></div>
+              <div>100%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 100%"></div>
+            </div>
+            <div class="left_3_lan">
+              <div><%=user.languages[1]%></div>
+              <div>80%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 80%"></div>
+            </div>
+            <div class="left_3_lan">
+              <div><%=user.languages[2]%></div>
+              <div>60%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 60%"></div>
+            </div>
+          </div>
+
+          <div class="marginer"></div>
+          <div class="left_4">
+            <div style="margin-bottom: 15px; font-weight: bolder">Skills</div>
+            <div class="left_4_skill">
+              <div><%=user.skills[0]%></div>
+              <div>100%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 90%"></div>
+            </div>
+            <div class="left_4_skill">
+              <div><%=user.skills[1]%></div>
+              <div>80%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+            <div class="left_4_skill">
+              <div><%=user.skills[2]%></div>
+              <div>60%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 80%"></div>
+            </div>
+            <div class="left_4_skill">
+              <div><%=user.skills[3]%></div>
+              <div>60%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 75%"></div>
+            </div>
+            <div class="left_4_skill">
+              <div><%=user.skills[4]%></div>
+              <div>60%</div>
+            </div>
+            <div class="progress-bg">
+              <div class="progress-fill" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="marginer"></div>
+          <div class="left_5">
+            <div style="margin-bottom: 15px; font-weight: bolder">
+              Extra Skills
+            </div>
+            <div class="left_5_extra">
+              <img src="icon/icons.svg" style="margin-right: 8px" />
+              <div>Bootstrap, Materialize</div>
+            </div>
+            <div class="left_5_extra">
+              <img src="icon/icons.svg" style="margin-right: 8px" />
+              <div>Stylus, Sass, Less</div>
+            </div>
+            <div class="left_5_extra">
+              <img src="icon/icons.svg" style="margin-right: 8px" />
+              <div>Gulp, Webpack, Grunt</div>
+            </div>
+            <div class="left_5_extra">
+              <img src="icon/icons.svg" style="margin-right: 8px" />
+              <div>GIT Knowledge</div>
+            </div>
+          </div>
+
+          <div class="marginer"></div>
+        </div>
+
+
+        
+        <div class="midd_frame">
+        <div class="midd_frame1">
+               <div class="midd_1">
+
+                    <div class="midd_1_1">
+                        <div class="midd_1_1_text1">Doctor neurologists in OHSU Hospital</div>
+                        <div class="midd_1_1_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</div>
+                        <button class="button">HIRE ME &gt;</button>
+                    </div>
+
+                    <div>
+                        <img class="profile_big" src="images/profile_big.png" alt="">
+                    </div>
+
+                </div> 
+        </div>
+       
+        
+
+             <div class="offer-section block">
+    <div class="offer_intro">
+        <div class="offer_title1">my services</div>
+        <div class="offer_title2">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+            amet sint. Velit officia consequat duis enim velit
+            mollit. lorem ipsum
+        </div>
+    </div>
+
+    <div class="offer_container">
+        <div class="offer_wrapper">
+
+            <div class="offer_content">
+                <div class="offer_row-top">
+                    <div class="offer_card">
+                        <div class="offer_icon">
+                            <img src="images/coding.svg" alt="">
+                        </div>
+                        <div class="offer_text1">web development</div>
+                        <div class="offer_text2">blog, e-commerce</div>
+                    </div>
+
+                    <div class="offer_card">
+                        <div class="offer_icon">
+                            <img src="images/Icons_illustration.svg" alt="">
+                        </div>
+                        <div class="offer_text1">uI/uX design</div>
+                        <div class="offer_text2">Mobile app, website design</div>
+                    </div>
+
+                    <div class="offer_card">
+                        <div class="offer_icon">
+                            <img src="images/Icons_Microphone.svg" alt="">
+                        </div>
+                        <div class="offer_text1">sound design</div>
+                        <div class="offer_text2">Voice Over, Beat Making</div>
+                    </div>
+                </div>
+
+                <div class="offer_row-bottom">
+                    <div class="offer_card">
+                        <div class="offer_icon">
+                            <img src="images/Icons_game.png" alt="">
+                        </div>
+                        <div class="offer_text1">game design</div>
+                        <div class="offer_text2">Character Design, Props & Objects</div>
+                    </div>
+
+                    <div class="offer_card">
+                        <div class="offer_icon">
+                            <img src="images/icon_photo.svg" alt="">
+                        </div>
+                        <div class="offer_text1">photography</div>
+                        <div class="offer_text2">portrait, product photography</div>
+                    </div>
+
+                    <div class="offer_card">
+                        <div class="offer_icon">
+                            <p class="offer_special_title">advertising</p>
+                        </div>
+                        <div class="offer_special_desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vitae nulla diam in ac dictum a urna viverra morbi.
+                        </div>
+                        <div class="offer_special_link">
+                            <span><a href="">ORDER NOW > </a></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+         
+         
+         </div>
+
+
+       <div class="right_frame">
+       <div class="panel_3 sidebar">
+    <div class="sidebar_controls">
+        <div class="sidebar_toggle">
+            <img src="btn_icon/Vector1.png" alt="">
+        </div>
+
+        <div class="sidebar_list">
+            <div class="sidebar_item">
+                <a href=""><img src="btn_icon/vector19.png" alt=""></a>
+            </div>
+            <div class="sidebar_item">
+                <a href=""><img src="btn_icon/vector2.svg" alt=""></a>
+            </div>
+            <div class="sidebar_item">
+                <a href=""><img src="btn_icon/vector3.svg" alt=""></a>
+            </div>
+            <div class="sidebar_item">
+                <a href=""><img src="btn_icon/vector4.png" alt=""></a>
+            </div>
+            <div class="sidebar_item">
+                <a href=""><img src="btn_icon/vector5.svg" alt=""></a>
+            </div>
+            <div class="sidebar_item">
+                <a href=""><img src="btn_icon/vector6.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+       </div>
+         </div>
+    </div>
+</body>
+        
+
+         </div>
+         </div>
+
+  </body>
+</html>
+
+
+
+

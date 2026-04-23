@@ -1,0 +1,19 @@
+<svg viewBox="0 0 14.5752 12.605" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.575195" height="12.604980" fill="none" customFrame="#000000">
+	<defs>
+		<clipPath id="clipPath_28">
+			<rect width="14.575342" height="12.604972" x="0.000000" y="0.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+		<clipPath id="clipPath_29">
+			<rect width="14.575342" height="12.604972" x="0.000000" y="0.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+	</defs>
+	<rect id="Icons-Youtube" width="14.575342" height="12.604972" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<g id="Icons-Youtube" customFrame="url(#clipPath_28)">
+		<rect id="Icons-Youtube" width="14.575342" height="12.604972" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+		<g id="Icons-Youtube" clip-path="url(#clipPath_29)" customFrame="url(#clipPath_29)">
+			<rect id="Icons-Youtube" width="14.575342" height="12.604972" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+			<path id="Vector" d="M0 0L14.5753 0L14.5753 12.605L0 12.605L0 0Z" fill-rule="nonzero" />
+			<path id="Vector" d="M13.0834 3.41304C13.361 4.34896 13.361 6.30273 13.361 6.30273C13.361 6.30273 13.361 8.2565 13.0834 9.19242C12.9292 9.70975 12.4779 10.1168 11.9065 10.2544C10.8686 10.5044 7.2879 10.5044 7.2879 10.5044C7.2879 10.5044 3.70905 10.5044 2.66934 10.2544C2.09544 10.1147 1.64482 9.70818 1.49238 9.19242C1.21484 8.2565 1.21484 6.30273 1.21484 6.30273C1.21484 6.30273 1.21484 4.34896 1.49238 3.41304C1.64664 2.89571 2.09787 2.48868 2.66934 2.35107C3.70905 2.10107 7.2879 2.10107 7.2879 2.10107C7.2879 2.10107 10.8686 2.10107 11.9065 2.35107C12.4804 2.49078 12.931 2.89729 13.0834 3.41304ZM6.07329 8.14096L9.71713 6.30273L6.07329 4.46451L6.07329 8.14096Z" fill="rgb(43,43,43)" fill-rule="nonzero" />
+		</g>
+	</g>
+</svg>

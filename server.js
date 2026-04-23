@@ -51,7 +51,7 @@ app.get("/author", (req, res) => {
 });
 
 app.get("/", function (req, res) {
-  // GET ---> DATABASE DAN MALUMOTNI OLISH UCHUN GET ISHLATILADI!!!!
+  // GET ---> DATABASE DAN MALUMOTNI O  LISH UCHUN GET ISHLATILADI!!!!
   res.render("harid");
 });
 // app.get("/hello", function (req, res) {
@@ -66,4 +66,5 @@ const server = http.createServer(app);
 let PORT = 3000; // PORT — bu server ishlaydigan raqamli eshik (port) degani.
 server.listen(PORT, function () {
   console.log(`The server is running successfully on port: ${PORT}`);
-});
+});  
+                                          

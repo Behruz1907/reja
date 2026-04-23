@@ -1,0 +1,19 @@
+<svg viewBox="0 0 14.5752 12.605" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.575195" height="12.604980" fill="none" customFrame="#000000">
+	<defs>
+		<clipPath id="clipPath_26">
+			<rect width="14.575342" height="12.604972" x="0.000000" y="0.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+		<clipPath id="clipPath_27">
+			<rect width="14.575342" height="12.604972" x="0.000000" y="0.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+	</defs>
+	<rect id="Icons-linkedin" width="14.575342" height="12.604972" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<g id="Icons-linkedin" customFrame="url(#clipPath_26)">
+		<rect id="Icons-linkedin" width="14.575342" height="12.604972" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+		<g id="Icons-linkedin" clip-path="url(#clipPath_27)" customFrame="url(#clipPath_27)">
+			<rect id="Icons-linkedin" width="14.575342" height="12.604972" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+			<path id="Vector" d="M0 0L14.5753 0L14.5753 12.605L0 12.605L0 0Z" fill-rule="nonzero" />
+			<path id="Vector" d="M4.21487 2.62613C4.21471 2.90472 4.08659 3.17184 3.85869 3.36874C3.63079 3.56563 3.32178 3.67616 2.99965 3.67602C2.67751 3.67588 2.36864 3.56508 2.14097 3.36799C1.9133 3.1709 1.78548 2.90367 1.78564 2.62508C1.78581 2.3465 1.91393 2.07938 2.14183 1.88248C2.36972 1.68559 2.67873 1.57506 3.00086 1.5752C3.323 1.57533 3.63188 1.68614 3.85955 1.88323C4.08722 2.08032 4.21503 2.34755 4.21487 2.62613ZM4.25131 4.45386L1.82208 4.45386L1.82208 11.0294L4.25131 11.0294L4.25131 4.45386ZM8.08948 4.45386L5.6724 4.45386L5.6724 11.0294L8.06519 11.0294L8.06519 7.57884C8.06519 5.65658 10.962 5.47801 10.962 7.57884L10.962 11.0294L13.3609 11.0294L13.3609 6.86456C13.3609 3.62403 9.07332 3.74483 8.06519 5.3362L8.08948 4.45386Z" fill="rgb(43,43,43)" fill-rule="nonzero" />
+		</g>
+	</g>
+</svg>

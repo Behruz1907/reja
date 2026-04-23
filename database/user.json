@@ -1,9 +1,9 @@
 {
-  "name": "Steve",
+  "name": "Ryan",
   "profession": "Software Engineer",
-  "age": 20,
+  "age": 21,
   "residence": "S.Korea",
-  "address": "S.Korea, Busan",
+  "address": "S.Korea, Daejeon",
   "languages": ["Uzbek", "Korean", "English"],
   "skills": ["Html", "Css", "Js", "NodeJs", "Python"],
   "extra_skills": [

@@ -26,7 +26,8 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
   }
 });
 
-// MongoDB connect
+// MongoDB chaqirish
+const db = require("./server").db();
 
 // 1: Kirish code
 
@@ -42,10 +43,22 @@ app.set("view engine", "ejs");
 
 // 4 Routing code
 app.post("/create-item", (req, res) => {
+   console.log("user entered /create-item");
+  console.log(req.body);
+  const new_reja = req.body.reja;
+  db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
+    if (err) {
+      console.log(err);
+      res.end('something went wrong');
+    } else {
+      res.end("successfully added")
+      
+
+    }
+  });
   // http==  3SECTIONS 1-START LINE, URL QISMI! 2-HTTP REQUEST HEADER QISMI! 3-BODY QISMI
   // POST OZI BN MALUM BIR MALUMOTNI OLIB KELADI VA DATA BASE GA OSHA MALUMOTNI YOZADI!!!
-  console.log(req);
-  res.json({ test: "success" });
+
 });
 
 app.get("/author", (req, res) => {
@@ -53,8 +66,19 @@ app.get("/author", (req, res) => {
 });
 
 app.get("/", function (req, res) {
+  console.log("user entered /");
+  db.collection("plans").find().toArray((err, data) => {
+    if (err) {
+      console.log(err);
+      res.end("something went wrong");
+    } else {
+      
+      res.render("reja", { items: data });
+   }
+  });
+
   // GET ---> DATABASE DAN MALUMOTNI OLISH UCHUN GET ISHLATILADI!!!!
-  res.render("reja");
+
 });
 // app.get("/hello", function (req, res) {
 //  res.end(`<h1>HELLO WORLD</h1>`);

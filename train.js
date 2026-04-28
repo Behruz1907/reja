@@ -1,5 +1,61 @@
 //  npm run train
 
+// TASK B
+
+// Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
+// string tarkibidagi sonlar miqdorini qaytarsin
+
+// Masalan: countDigits("ad2a54y79wet0sfgb9")
+// Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi
+
+
+
+// TASK B - Javob
+
+let str = "b1d2d54y79Ke6t0sfgb";
+
+function countDigits(string) {
+    let count = 0;
+     for (let i = 0; i < string.length; i++) {
+         if (string[i] >= '0' && string[i] <= '9') {
+             count++;
+     }
+    
+      
+     }
+    return count;
+    
+ 
+}
+  console.log(countDigits(str));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* IZOHI task-A
 

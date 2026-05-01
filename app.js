@@ -47,14 +47,8 @@ app.post("/create-item", (req, res) => {
   console.log(req.body);
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
-    if (err) {
-      console.log(err);
-      res.end('something went wrong');
-    } else {
-      res.end("successfully added")
-      
-
-    }
+    console.log(data.ops);
+    res.json(data.ops[0]);
   });
   // http==  3SECTIONS 1-START LINE, URL QISMI! 2-HTTP REQUEST HEADER QISMI! 3-BODY QISMI
   // POST OZI BN MALUM BIR MALUMOTNI OLIB KELADI VA DATA BASE GA OSHA MALUMOTNI YOZADI!!!

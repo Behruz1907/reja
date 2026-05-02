@@ -1,5 +1,55 @@
 //  npm run train
 
+// TASK-C
+
+// Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.
+// Hamda classning quyidagdek 3'ta metodi bo'lsin:
+
+// 1) qoldiq
+// 2) sotish
+// 3) qabul
+
+// Har bir metod ishga tushgan vaqtda log qilinsin
+
+// MASALAN:
+// const shop = new Shop(4, 5, 2)
+
+// shop.qoldiq();
+// natija qaytishi kerak: Hozir 20: 40'da 4'ta non, 5'ta lag'mon va 2'ta cola mavjud
+
+// shop.sotish("non", 3); & shop.qabul("cola", 4); & shop.qoldiq();
+// Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!
+
+
+
+// JAVOB:
+const moment = require("moment");
+
+class Shop {
+
+    constructor ( non, lagmon, cola) {
+        this.non = non;
+        this.lagmon = lagmon;
+        this.cola = cola;
+    
+    }
+
+    qoldiq() {
+        console.log(`Hozir dokonda ${this.non}, ${this.lagmon} va ${this.cola} mavjud `)
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
 // TASK B
 
 // Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
@@ -12,22 +62,22 @@
 
 // TASK B - Javob
 
-let str = "b1d2d54y79Ke6t0sfgb";
+// let str = "b1d2d54y79Ke6t0sfgb";
 
-function countDigits(string) {
-    let count = 0;
-     for (let i = 0; i < string.length; i++) {
-         if (string[i] >= '0' && string[i] <= '9') {
-             count++;
-     }
+// function countDigits(string) {
+//     let count = 0;
+//      for (let i = 0; i < string.length; i++) {
+//          if (string[i] >= '0' && string[i] <= '9') {
+//              count++;
+//      }
     
       
-     }
-    return count;
+//      }
+//     return count;
     
  
-}
-  console.log(countDigits(str));
+// }
+//   console.log(countDigits(str));
 
 
 

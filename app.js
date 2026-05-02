@@ -17,6 +17,7 @@ const app = express(); // APP  endi meni server obyektim barcha yollar va buyruq
 const { text } = require("stream/consumers");
 const fs = require("fs");
 
+
 let user;
 fs.readFile("database/user.json", "utf8", (err, data) => {
   if (err) {
@@ -28,6 +29,7 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 
 // MongoDB chaqirish
 const db = require("./server").db();
+const mongodb = require("mongodb");
 
 // 1: Kirish code
 
@@ -54,6 +56,19 @@ app.post("/create-item", (req, res) => {
   // POST OZI BN MALUM BIR MALUMOTNI OLIB KELADI VA DATA BASE GA OSHA MALUMOTNI YOZADI!!!
 
 });
+
+app.post("/delete-item", (req, res) => {
+  const id = req.body.id;
+  db.collection("plans").deleteOne({
+    _id: new mongodb.ObjectId(id)
+  },
+    function (err, data) {
+      res.json({state: "success"});
+  })
+
+});
+
+
 
 app.get("/author", (req, res) => {
   res.render("author", { user: user });

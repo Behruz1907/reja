@@ -25,7 +25,7 @@
 // JAVOB:
 const moment = require("moment");
 
-class Shop {
+class BehruzShop {
 
     constructor ( non, lagmon, cola) {
         this.non = non;
@@ -35,13 +35,52 @@ class Shop {
     }
 
     qoldiq() {
-        console.log(`Hozir dokonda ${this.non}, ${this.lagmon} va ${this.cola} mavjud `)
+            const time = moment().format("HH:mm");
+        console.log(`Hozir ${time} da: ${this.non} ta non ${this.lagmon} ta lagmon  va ${this.cola} blok cola mavjud `)
     }
 
 
+    sotish(product, amount) {
+            const time = moment().format("HH:mm");
+        if (product === "non") {
+        this.non -= amount;
+        } else if(product === "lagmon") {
+       this.lagmon -= amount;
+        } else if (product === "cola") {
+            this.cola -= amount;
+        } else {
+            return console.log("Uzur bunday mahsulot mavjud emas");
+    }
+console.log(`Hozir ${time}da ${product}dan ${amount}ta sotildi`);
 
+    }
 
+   
+    qabul(product, amount) {
+        const time = moment().format("HH:mm");
+
+        if (product === "non") {
+            this.non += amount;
+        } else if (product === "lagmon") {
+            this.lagmon += amount;
+        } else if (product === "cola") {
+            this.cola += amount;
+        } else {
+            return console.log("Dokonimizda bunday mahsulot yoq!");
+        }
+
+        console.log(`Hozir ${time}da ${product}dan ${amount}ta qabul qilindi`);
+    }
 }
+
+
+   const behruzShop = new BehruzShop(4, 5, 2);
+
+behruzShop.qoldiq();
+behruzShop.sotish("non", 3);
+behruzShop.qabul("cola", 4);
+behruzShop.qoldiq(); 
+
 
 
 

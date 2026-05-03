@@ -46,9 +46,6 @@ console.log(yakun);
 
 
 
-
-
-
 // TASK-C
 
 // Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.

@@ -1,5 +1,37 @@
 //  npm run train
 
+// TASK E
+
+// Shunday function tuzing, u bitta string argumentini qabul qilib, qabul qilingan stringni teskari ko'rinishda return qilsin.
+
+// Masalan: getReverse("hello") return "olleh"
+
+
+// JAVOB:
+const message = "assalomu alaykum";
+
+function getReverse(a) {
+    const message = a.split("").reverse().join("");
+    return message;
+    
+}
+
+const yakun = getReverse("assalomu alaykum");  
+console.log(yakun);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // TASK D
 
 // Ikkita parametra ega function tuzing, va functioning berilgan birinchi va ikkinchi parametr qiymatlari o'zaro to'liq mos kelsa true qiymat qaytarsin.
@@ -8,24 +40,24 @@
 
 
 
-let salom = "mitgroup";
-let salom2 = "gmtiprou";
+// let salom = "mitgroup";
+// let salom2 = "gmtiprou";
 
-function checkContent(a, b) {
-    let salom = a.split("").sort().join("");
+// function checkContent(a, b) {
+//     let salom = a.split("").sort().join("");
 
-    let salom2 = b.split("").sort().join("");
-    if (salom === salom2) {
-        return true;
-    } else {
-        return false;
-    }
+//     let salom2 = b.split("").sort().join("");
+//     if (salom === salom2) {
+//         return true;
+//     } else {
+//         return false;
+//     }
         
  
-}
+// }
 
-let yakun = checkContent("mitgroup", "gmtiprou");
-console.log(yakun);
+// let yakun = checkContent("mitgroup", "gmtiprou");
+// console.log(yakun);
 
 
 

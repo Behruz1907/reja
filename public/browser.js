@@ -1,15 +1,15 @@
 
 
-console.log("FrontEnd JS ishga tushdi");
+console.log("Frontend JavaScript has started");
 function itemTemplate(item) {
     return `<li class="list-group-item list-group-item-info d-flex align-items-center justify-content-between" 
         >
           <span class="item-text">${item.reja}</span>
           <div>
             <button data-id="${item._id}" class="edit-me btn btn-secondary btn-sm mr-1">
-              O'zgartirish
+              Edit
             </button>
-            <button  data-id="${item._id}" class="delete-me btn-danger btn-sm" >O'chirish</button>
+            <button  data-id="${item._id}" class="delete-me btn-danger btn-sm" >Delete</button>
           </div>
         </li>`;
 }
@@ -29,7 +29,7 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
             
         })
         .catch((err) => { 
-             console.log("Iltimos qaytadan harakat qiling!");
+             console.log("Please try again!");
         });
    
 });
@@ -40,7 +40,7 @@ document.addEventListener("click", function (e) {
   // delete oper
   console.log(e.target);
   if (e.target.classList.contains("delete-me")) {
-    if (confirm("Aniq ochirmoqchimisz?")) {
+    if (confirm("Are you sure you want to delete?")) {
    
       axios
         .post("/delete-item", { id: e.target.getAttribute("data-id") })
@@ -49,7 +49,7 @@ document.addEventListener("click", function (e) {
           e.target.parentElement.parentElement.remove();
         })
         .catch((err) => {
-          console.log("Iltimos qaytadan harakat qiling!");
+          console.log("Please try again!");
         });
 
 
@@ -60,13 +60,13 @@ document.addEventListener("click", function (e) {
  // edit oper
  if (e.target.classList.contains("edit-me")) {
 
-    let userInput = prompt(
-      "O'zgartirish kiriting",
+   let userInput = prompt(
+     "Make changes",
       e.target.parentElement.parentElement.querySelector(".item-text").innerHTML);
     if (userInput) {
       axios
         .post("/edit-item", {
-          id: e.target.getAttribute("data-id"), new_input: userInput,
+           id: e.target.getAttribute("data-id"), new_input: userInput,
        
         }).then((response) => {
           console.log(response.data);
@@ -74,7 +74,7 @@ document.addEventListener("click", function (e) {
        
         })
         .catch((err) => { 
-           console.log("Iltimos qaytadan harakat qiling!");
+           console.log("Please try again!");
         }); 
     }
   }

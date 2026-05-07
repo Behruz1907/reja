@@ -10,7 +10,7 @@
 
 // EJS (Embedded JavaScript) — bu Node.js muhitida ishlatiladigan template engine bo‘lib, HTML ichida JavaScript kod yozishga imkon beradi.
 
-console.log("Web Serverni boshlash"); // server.js ishlayotganini visual korsatib beradi(easy)
+console.log("Start the web server"); // server.js ishlayotganini visual korsatib beradi(easy)
 const express = require("express");
 const app = express(); // APP  endi meni server obyektim barcha yollar va buyruqlar aynan shu APP  orqali boshqariladi!!!!
  // http bizning core modulimiz
@@ -94,7 +94,7 @@ app.get("/author", (req, res) => {
 app.post("/delete-all", (req, res) => {
   if (req.body.delete_all) {
     db.collection("plans").deleteMany(function () {
-      res.json({ state: "Hamma rejalar o'chirildi" });
+      res.json({ state: "All plans have been deleted" });
     });
   }
 })

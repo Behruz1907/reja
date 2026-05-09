@@ -1,5 +1,38 @@
 //  npm run train
 
+
+// TASK F
+
+// Yagona string argumentga ega findDoublers nomli function tuzing. Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa true yokida false natija qaytarsin.
+
+// Masalan: findDoublers("hello") return true
+
+// JAVOB:
+const message = "behruz";
+function findDoublers(a) {
+    const set = new Set();
+    for (let i = 0; i < a.length; i++){
+        if (set.has(a[i])) {
+            return true;
+            
+        }  
+            set.add(a[i])
+          
+    }
+      return false;
+    }
+     
+       
+
+findDoublers("beehruz");
+ console.log(findDoublers("beehruz"))
+
+
+
+
+
+
+
 // TASK E
 
 // Shunday function tuzing, u bitta string argumentini qabul qilib, qabul qilingan stringni teskari ko'rinishda return qilsin.
@@ -8,16 +41,16 @@
 
 
 // JAVOB:
-const message = "assalomu alaykum";
+// const message = "assalomu alaykum";
 
-function getReverse(a) {
-    const message = a.split("").reverse().join("");
-    return message;
+// function getReverse(a) {
+//     const message = a.split("").reverse().join("");
+//     return message;
     
-}
+// }
 
-const yakun = getReverse("assalomu alaykum");  
-console.log(yakun);
+// const yakun = getReverse("assalomu alaykum");  
+// console.log(yakun);
 
 
 

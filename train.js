@@ -1,5 +1,37 @@
 //  npm run train
 
+const { max } = require("moment/moment");
+
+
+// TASK G
+
+// Yagona parametrga ega function tuzing. Array tarkibidagi birinchi eng katta qiymatning indeksini qaytarsin.
+
+// Masalan: getHighestIndex([5, 21, 12, 21, 8]) return 1
+
+// JAVOB:
+
+
+
+function getHighestIndex(a) {
+    let max = a[0]
+    let index = 0;
+
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] > max) {
+            max = a[i];
+            index = i;
+        }
+    }
+
+    return index;
+}
+
+getHighestIndex([5, 10, 20, 15, 21])
+console.log(getHighestIndex([5,  10, 20, 15, 21]));
+
+
+
 
 // TASK F
 
@@ -7,29 +39,38 @@
 
 // Masalan: findDoublers("hello") return true
 
-// JAVOB:
-const message = "behruz";
-function findDoublers(a) {
-    const set = new Set();
-    for (let i = 0; i < a.length; i++){
-        if (set.has(a[i])) {
-            return true;
+// // JAVOB:
+// const message = "behruz";
+// function findDoublers(a) {
+//     const set = new Set();
+//     for (let i = 0; i < a.length; i++){
+//         if (set.has(a[i])) {
+//             return true;
             
-        }  
-            set.add(a[i])
+//         }  
+//             set.add(a[i])
           
-    }
-      return false;
-    }
+//     }
+//       return false;
+//     }
      
        
 
-findDoublers("beehruz");
- console.log(findDoublers("beehruz"))
+// findDoublers("beehruz");
+//  console.log(findDoublers("beehruz"))
 
 
-
-
+// const test = "anorboyev";
+// function findLetters(b) {
+//     const set = new Set();
+//     for (let i = 0; i < b.length; i++){
+//         if (set.has(b[i])) {
+//             return true;
+//         }
+//         set.add(b[i])
+//     }
+//     return false;
+// }
 
 
 

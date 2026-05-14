@@ -1,8 +1,31 @@
 //  npm run train
 
-const { max } = require("moment/moment");
+// TASK H
+
+// Integerlardan iborat arrayni qabul qilib, faqatgina positive sonlarni olib string holatida return qilsin.
+
+// Masalan: getPositive([1, -4, 2]) return "12"
 
 
+
+
+// JAVOB:
+
+// 
+function getPositive(a) {
+    let positivenum = "";
+
+   for (let i = 0; i < a.length; i++) {
+       if (a[i] > 0) {
+         positivenum += a[i]
+       }
+}
+    return positivenum;
+}
+
+
+getPositive([1, -3, 4, -9, 20])
+console.log(getPositive([1, -3, 4, -9, 20]))
 // TASK G
 
 // Yagona parametrga ega function tuzing. Array tarkibidagi birinchi eng katta qiymatning indeksini qaytarsin.
@@ -13,22 +36,23 @@ const { max } = require("moment/moment");
 
 
 
-function getHighestIndex(a) {
-    let max = a[0]
-    let index = 0;
+// function getHighestIndex(a) {
+//     let max = a[0]
+//     let index = 0;
 
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] > max) {
-            max = a[i];
-            index = i;
-        }
-    }
+//     for (let i = 0; i < a.length; i++) {
+//         if (a[i] > max) {
+//             max = a[i];
+//             index = i;
+//         }
+//     }
 
-    return index;
-}
+//     return index;
+// }
 
-getHighestIndex([5, 10, 20, 15, 21])
-console.log(getHighestIndex([5,  10, 20, 15, 21]));
+// getHighestIndex([5, 10, 20, 15, 21])
+// console.log(getHighestIndex([5,  10, 20, 15, 21]));
+
 
 
 

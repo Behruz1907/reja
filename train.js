@@ -1,5 +1,33 @@
 //  npm run train
 
+
+// TASK I
+
+// Array ichida eng ko'p takrorlangan raqamni topib qaytarsin.
+
+// Masalan: majorityElement([1, 2, 3, 4, 5, 4, 3, 4]) return 4
+
+function majorityElement(a) {
+    let result;
+    let count = {}
+    let mostcount = 0;
+     
+    for (let i = 0; i < a.length; i++) {
+       
+        let numbs = a[i]
+        count[numbs] = (count[numbs] || 0) + 1
+
+     if (count[numbs] > mostcount) {
+        mostcount = count[numbs]
+         result = numbs;
+  }
+    }
+      return result;
+}
+
+
+majorityElement([1, 2, 3, 4, 5, 4, 3, 4])
+console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
 // TASK H
 
 // Integerlardan iborat arrayni qabul qilib, faqatgina positive sonlarni olib string holatida return qilsin.
@@ -11,21 +39,21 @@
 
 // JAVOB:
 
-// 
-function getPositive(a) {
-    let positivenum = "";
+// // 
+// function getPositive(a) {
+//     let positivenum = "";
 
-   for (let i = 0; i < a.length; i++) {
-       if (a[i] > 0) {
-         positivenum += a[i]
-       }
-}
-    return positivenum;
-}
+//    for (let i = 0; i < a.length; i++) {
+//        if (a[i] > 0) {
+//          positivenum += a[i]
+//        }
+// }
+//     return positivenum;
+// }
 
 
-getPositive([1, -3, 4, -9, 20])
-console.log(getPositive([1, -3, 4, -9, 20]))
+// getPositive([1, -3, 4, -9, 20])
+// console.log(getPositive([1, -3, 4, -9, 20]))
 // TASK G
 
 // Yagona parametrga ega function tuzing. Array tarkibidagi birinchi eng katta qiymatning indeksini qaytarsin.

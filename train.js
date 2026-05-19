@@ -1,5 +1,44 @@
 //  npm run train
 
+// TASK J
+
+// String ichidagi eng uzun so'zni qaytarsin.
+
+// Masalan: findLongestWord("I came from Uzbekistan!") return "Uzbekistan!"
+
+// JAVOB:
+function findLongestWord(a) {
+
+   
+    let longest = "";
+    let mostlongest = 0;
+      let words = a.split(" ")
+
+    for (let i = 0; i < words.length; i++) {
+           let word = words[i]
+    
+        if (word.length > mostlongest) {
+          
+            mostlongest = word.length
+            longest = word
+        }
+
+    }
+    return longest;
+} 
+
+
+findLongestWord("I came from Uzbekistan!");
+console.log(findLongestWord("I came from Uzbekistan!"));
+
+
+
+
+
+
+
+
+
 
 // TASK I
 
@@ -7,27 +46,27 @@
 
 // Masalan: majorityElement([1, 2, 3, 4, 5, 4, 3, 4]) return 4
 
-function majorityElement(a) {
-    let result;
-    let count = {}
-    let mostcount = 0;
+// function majorityElement(a) {
+//     let result;
+//     let count = {}
+//     let mostcount = 0;
      
-    for (let i = 0; i < a.length; i++) {
+//     for (let i = 0; i < a.length; i++) {
        
-        let numbs = a[i]
-        count[numbs] = (count[numbs] || 0) + 1
+//         let numbs = a[i]
+//         count[numbs] = (count[numbs] || 0) + 1
 
-     if (count[numbs] > mostcount) {
-        mostcount = count[numbs]
-         result = numbs;
-  }
-    }
-      return result;
-}
+//      if (count[numbs] > mostcount) {
+//         mostcount = count[numbs]
+//          result = numbs;
+//   }
+//     }
+//       return result;
+// }
 
 
-majorityElement([1, 2, 3, 4, 5, 4, 3, 4])
-console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
+// majorityElement([1, 2, 3, 4, 5, 4, 3, 4])
+// console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
 // TASK H
 
 // Integerlardan iborat arrayni qabul qilib, faqatgina positive sonlarni olib string holatida return qilsin.

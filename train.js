@@ -1,4 +1,60 @@
 //  npm run train
+// TASK K
+
+// Berilayotgan parametr tarkibida nechta unli harf bor ekanligini aniqlovchi function tuzing.
+
+// Masalan: countVowels("string") return 1
+
+
+
+function countVowels(a) {
+
+
+
+        let vowels = "aeiou"
+
+  
+    let count = 0;
+   
+
+    for (let i = 0; i < a.length; i++) {
+        if (vowels.includes(a[i].toLowerCase())) {
+            count++
+        }
+    }
+    return count;
+}
+
+    
+console.log(countVowels("striiing"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // TASK J
 
@@ -7,29 +63,29 @@
 // Masalan: findLongestWord("I came from Uzbekistan!") return "Uzbekistan!"
 
 // JAVOB:
-function findLongestWord(a) {
+// function findLongestWord(a) {
 
    
-    let longest = "";
-    let mostlongest = 0;
-      let words = a.split(" ")
+//     let longest = "";
+//     let mostlongest = 0;
+//       let words = a.split(" ")
 
-    for (let i = 0; i < words.length; i++) {
-           let word = words[i]
+//     for (let i = 0; i < words.length; i++) {
+//            let word = words[i]
     
-        if (word.length > mostlongest) {
+//         if (word.length > mostlongest) {
           
-            mostlongest = word.length
-            longest = word
-        }
+//             mostlongest = word.length
+//             longest = word
+//         }
 
-    }
-    return longest;
-} 
+//     }
+//     return longest;
+// } 
 
 
-findLongestWord("I came from Uzbekistan!");
-console.log(findLongestWord("I came from Uzbekistan!"));
+// findLongestWord("I came from Uzbekistan!");
+// console.log(findLongestWord("I came from Uzbekistan!"));
 
 
 
